@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #f0f0f0;
+    background-size:cover;
+  background-position: center center;
+background-attachment: fixed;
+
+     }
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #search-container {
+    margin: 1em 0;
+    align-items: center;
+  }
+  #search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #1d1d1e;
+    padding: 1em 0.3em;
+    font-weight: bold;
+   
+  }
+  #search-container input:focus {
+    border-bottom-color: #141415;
+  }
+  #search-container button {
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:8px;
+    padding-top:8px;
+    margin-left: 1em;
+    background-color: #ffa940;
+    color: black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    font-size:17px;
+    border-color:rgb(222, 17, 17);
+    
+  }
+  #search-container button:hover{
+    background-color: black;
+    color:white;
+    border-color:white;
+  }
+  .heading{
+  text-align:center;
+    color:#0e592b;
+    font-family: 'Nunito', sans-serif;
+    font-size:50px;
+  }
+  .button-value {
+    border: 2px solid #3b3b3b;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right:5px;
+    padding-left:5px;
+    border-radius: 5em;
+    background-color: #e0e0e0;
+    
+    cursor: pointer;
+    margin-bottom:5px;
+    font-size: 15px;
+    color:BLACK;
+
+    border-color:rgb(60, 59, 59);
+    
+  }
+  .button-value:hover{
+    background-color: rgb(9, 9, 9);
+    color:rgb(246, 239, 239);
+    border-color: rgb(9, 9, 9);
+  }
+  .active {
+    background-color: #3b3b3b;
+    color: white;
+    border-color: #3b3b3b;
+  }
+  #products {
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+    font-size: 20px;
+  }
+  .card {
+    background-color:#0e592b;
+   color:white;
+    max-width: 400px;
+    width:90%;
+    max-height:500px;
+    margin-top: 1em;
+    padding: 1em;
+    margin-bottom:8px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+      backdrop-filter: blur(1rem);
+      box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+      border-top-color: rgba(58, 31, 31, 0.5);
+      border-left-color: rgba(58, 31, 31, 0.5);
+      border-bottom-color: rgba(58, 31, 31, 0.5);
+      border-right-color: rgba(58, 31, 31, 0.5); }
+  .image-container {
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: fill;
+    height: 70px;
+  }
+  .container {
+    padding-top: 1em;
+    color: rgb(19, 18, 18);
+  }
+  .container h5 {
+    font-weight: 100;
+    color:white;
+  }
+  a:hover{
+    color: white;
+    
+    background-color: rgb(10, 10, 10);
+  }
+  a{
+    text-decoration: none;
+    border: 1px solid ;
+    border-radius:10px;
+    padding-left:10px;
+    padding-right:10px;
+    color:black;
+    background-color: #6adc91;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 120px;
+      
+    }
+    .heading{
+      font-size:30px;
+    }
+    .card {
+      margin-left:45px;
+      width:250px;
+      margin-top: 10px;
+    }
+    .button-value{
+      font-size:13px;
+    }
+    #search-container button{
+      padding-left:5px;
+      font-size: 12px;
+      padding-right:5px;
+      padding-top:5px;
+      
+    }
+    #products {
+      grid-template-columns: 0em;
+      grid-column-gap:1px;
+    }
+  }
